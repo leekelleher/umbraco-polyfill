@@ -24,10 +24,10 @@ jobs:
       run: cd src
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Umbraco.Community.Polyfill.sln
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build Umbraco.Community.Polyfill.sln --configuration Release
 
     - name: Push
       run: dotnet nuget push **\*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json

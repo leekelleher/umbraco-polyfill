@@ -20,6 +20,8 @@ namespace Umbraco.Core.Runtime
             composition.RegisterUnique<IIOHelper, IOHelperPolyfill>();
 
             composition.RegisterUnique<IJsonSerializer, UmbracoPolyfillJsonSerializer>();
+
+            composition.RegisterUnique<IConfigurationEditorJsonSerializer, ConfigurationEditorJsonSerializer>();
         }
     }
 }

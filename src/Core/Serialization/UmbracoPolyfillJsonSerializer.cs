@@ -8,9 +8,9 @@ using Newtonsoft.Json.Linq;
 namespace Umbraco.Core.Serialization
 {
     // https://github.com/umbraco/Umbraco-CMS/blob/release-9.0.0/src/Umbraco.Infrastructure/Serialization/JsonNetSerializer.cs
-    internal sealed class UmbracoPolyfillJsonSerializer : IJsonSerializer
+    internal class UmbracoPolyfillJsonSerializer : IJsonSerializer
     {
-        private static readonly JsonSerializerSettings _jsonSerializerSettings = new JsonSerializerSettings()
+        protected static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings()
         {
             Converters = new List<JsonConverter>()
             {
@@ -18,7 +18,7 @@ namespace Umbraco.Core.Serialization
             }
         };
 
-        public T Deserialize<T>(string input) => JsonConvert.DeserializeObject<T>(input, _jsonSerializerSettings);
+        public T Deserialize<T>(string input) => JsonConvert.DeserializeObject<T>(input, JsonSerializerSettings);
 
         public T DeserializeSubset<T>(string input, string key)
         {
@@ -41,7 +41,7 @@ namespace Umbraco.Core.Serialization
             }
         }
 
-        public string Serialize(object input) => JsonConvert.SerializeObject(input, _jsonSerializerSettings);
+        public string Serialize(object input) => JsonConvert.SerializeObject(input, JsonSerializerSettings);
     }
 }
 #endif

@@ -1,8 +1,8 @@
-## Community Polyfill for Umbraco 8
+## Community Polyfill for Umbraco
 
 This project offers polyfills for classes, extensions and helpers, designed to support Umbraco package developers migrating and with multi-targeting both Umbraco 8 (.NET Fx 4.7.2) and Umbraco 9 (.NET 5.0).
 
-The aim of the polyfills is to reduce the number of `#if`/`#else` preprocessor directives needed throughout the codebase.
+The initial aim of the project is to polyfill Umbraco 8 to support Umbraco 9 APIs, in order to reduce the number of `#if`/`#else` preprocessor directives needed throughout a package's codebase.
 
 ---
 

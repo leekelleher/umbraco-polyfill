@@ -18,6 +18,10 @@
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
     <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
         <PackageReference Include="UmbracoCms.Web" Version="8.0.0" />
     </ItemGroup>

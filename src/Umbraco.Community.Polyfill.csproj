@@ -12,6 +12,7 @@
         <Company>Package Factory</Company>
         <Authors>Lee Kelleher</Authors>
         <Copyright>2022 © Lee Kelleher</Copyright>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/leekelleher/umbraco-polyfill</PackageProjectUrl>
         <RepositoryUrl>https://github.com/leekelleher/umbraco-polyfill</RepositoryUrl>
@@ -21,6 +22,10 @@
     <PropertyGroup>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\.github\NUGET_README.md" Pack="true" PackagePath="\README.md" />
+    </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
         <PackageReference Include="UmbracoCms.Web" Version="8.0.0" />

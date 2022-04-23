@@ -11,6 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\.github\README.md = ..\.github\README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{FCBA81B6-7320-4CAF-967F-46A9E1A7D000}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\NUGET_README.md = ..\.github\NUGET_README.md
+		..\.github\README.md = ..\.github\README.md
+		..\.github\workflows\release.yml = ..\.github\workflows\release.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCBA81B6-7320-4CAF-967F-46A9E1A7D000} = {2E22C3BA-DCF9-4545-AC5F-6FA46E3DAADE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4614BC6-4D23-47C9-AFB5-5D984660B901}

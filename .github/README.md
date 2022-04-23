@@ -11,25 +11,23 @@ The initial aim of the library is to polyfill Umbraco 8 to support newer Umbraco
 
 _**Please note,**_ this is not a stand-alone Umbraco package, it is a code library only, installable from NuGet only.
 
-> `dotnet add package` [`Our.Umbraco.Community.Polyfill`](https://www.nuget.org/packages/Our.Umbraco.Community.Polyfill)
+    dotnet add package Our.Umbraco.Community.Polyfill
 
-
-### Work-in-progress
-
-**This library should be considered a continued work-in-progress, and NOT feature complete.**
-
-If anything is missing, please send a pull request.
-
-The polyfills so far have been to service the following Umbraco packages:
-
-- [Contentment](https://github.com/leekelleher/umbraco-contentment)
-- [Custom Value Converter](https://github.com/leekelleher/umbraco-custom-valueconverter)
+> <https://www.nuget.org/packages/Our.Umbraco.Community.Polyfill>
 
 
 ### Roadmap
 
-This library does not have a roadmap. Any additional features will be added as and when they are needed.
-If you feel that anything missing, again, please send a pull request.
+This library does not have a roadmap. **It should be considered a continued work-in-progress, and NOT feature complete.**
+
+If anything is missing, please send a pull request.
+
+Any additional polyfills will be added as-and-when they are needed. So far I am using this library to service the following Umbraco packages:
+
+- [Contentment](https://github.com/leekelleher/umbraco-contentment)
+- [Custom Value Converter](https://github.com/leekelleher/umbraco-custom-valueconverter)
+
+If they need additional polyfills, then they'll be added to this library.
 
 
 ### Support

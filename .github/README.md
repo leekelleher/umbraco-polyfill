@@ -11,9 +11,8 @@ The initial aim of the library is to polyfill Umbraco 8 to support newer Umbraco
 
 _**Please note,**_ this is not a stand-alone Umbraco package, it is a code library only, installable from NuGet only.
 
-```
-dotnet add package [Our.Umbraco.Community.Polyfill](https://www.nuget.org/packages/Our.Umbraco.Community.Polyfill)
-```
+> `dotnet add package` [`Our.Umbraco.Community.Polyfill`](https://www.nuget.org/packages/Our.Umbraco.Community.Polyfill)
+
 
 ### Work-in-progress
 

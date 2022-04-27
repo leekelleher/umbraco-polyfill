@@ -8,7 +8,7 @@
         <Title>Community Polyfill for Umbraco</Title>
         <Description>Polyfills for Umbraco packages multi-targeting both v8 and v9</Description>
         <PackageTags>umbraco plugin package polyfill</PackageTags>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Company>Package Factory</Company>
         <Authors>Lee Kelleher</Authors>
         <Copyright>2022 © Lee Kelleher</Copyright>

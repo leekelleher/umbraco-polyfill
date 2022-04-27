@@ -12,6 +12,7 @@
         <Company>Package Factory</Company>
         <Authors>Lee Kelleher</Authors>
         <Copyright>2022 © Lee Kelleher</Copyright>
+        <PackageIcon>icon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/leekelleher/umbraco-polyfill</PackageProjectUrl>
@@ -24,6 +25,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="..\docs\assets\img\logo.png" Pack="true" PackagePath="\icon.png" />
         <None Include="..\.github\NUGET_README.md" Pack="true" PackagePath="\README.md" />
     </ItemGroup>
 

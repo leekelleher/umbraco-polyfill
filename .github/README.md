@@ -40,3 +40,9 @@ If they need additional polyfills, then they'll be added to this library.
 Copyright &copy; [Lee Kelleher](https://leekelleher.com).
 
 All source code is licensed under the [MIT License](../LICENSE).
+
+
+#### Logo
+
+The package logo uses the [Healing](https://thenounproject.com/icon/healing-4526747/) (by [Agus Raharjo](https://thenounproject.com/agusrahar/)) icon from the [Noun Project](https://thenounproject.com), licensed under [CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/).
+

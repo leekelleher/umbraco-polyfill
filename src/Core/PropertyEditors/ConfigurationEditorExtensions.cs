@@ -1,8 +1,7 @@
 ﻿#if NET472
-using Umbraco.Core.PropertyEditors;
 using Umbraco.Core.Serialization;
 
-namespace Umbraco.Community.Polyfill.Core.PropertyEditors
+namespace Umbraco.Core.PropertyEditors
 {
     public static class ConfigurationEditorExtensions
     {

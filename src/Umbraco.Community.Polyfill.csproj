@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net472;net5.0</TargetFrameworks>
+        <TargetFrameworks>net472;net5.0;net6.0</TargetFrameworks>
         <ContentTargetFolders>.</ContentTargetFolders>
         <Product>Umbraco.Community.Polyfill</Product>
         <PackageId>Our.Umbraco.Community.Polyfill</PackageId>
         <Title>Community Polyfill for Umbraco</Title>
         <Description>Polyfills for Umbraco packages multi-targeting both v8 and v9</Description>
         <PackageTags>umbraco plugin package polyfill</PackageTags>
-        <Version>1.1.2</Version>
+        <Version>1.2.0-rc1</Version>
         <Company>Package Factory</Company>
         <Authors>Lee Kelleher</Authors>
         <Copyright>2022 © Lee Kelleher</Copyright>
@@ -34,8 +34,13 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
-        <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.0.0" />
-        <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.0.0" />
+        <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.0.1" />
+        <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.0.1" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+        <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.0-rc1" />
+        <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.0-rc1" />
     </ItemGroup>
 
     <Target Name="RemoveLuceneAnalyzer" BeforeTargets="CoreCompile">

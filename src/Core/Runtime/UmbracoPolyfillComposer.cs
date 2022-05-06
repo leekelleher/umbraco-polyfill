@@ -1,4 +1,5 @@
 ﻿#if NET472
+using Microsoft.AspNetCore.Hosting;
 using Umbraco.Core.Composing;
 using Umbraco.Core.Hosting;
 using Umbraco.Core.IO;
@@ -16,6 +17,8 @@ namespace Umbraco.Core.Runtime
             composition.RegisterAuto(typeof(ILogger<>), typeof(UmbracoPolyfillLogger<>));
 
             composition.RegisterUnique<IHostingEnvironment, AspNetFxHostingEnvironment>();
+
+            composition.RegisterUnique<IWebHostEnvironment, AspNetFxWebHostEnvironment>();
 
             composition.RegisterUnique<IIOHelper, IOHelperPolyfill>();
 

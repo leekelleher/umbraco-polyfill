@@ -1,5 +1,7 @@
 ## Community Polyfill for Umbraco
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 ### What is it?
 
 This library offers polyfills for classes, extensions and helpers, designed to support [Umbraco](https://github.com/umbraco/Umbraco-CMS/) package developers migrating and with multi-targeting both Umbraco 8 (.NET Fx 4.7.2) and Umbraco 9 (.NET 5.0).
